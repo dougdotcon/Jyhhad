@@ -10,15 +10,6 @@ contracts/
 ├── VTESCard.sol      # NFTs para cartas VTES
 ├── GameRewards.sol    # Sistema de recompensas
 └── JyhhadGovernance.sol # Governança DAO
-
-test/
-├── SoulOfEnemy.test.js
-├── VTESCard.test.js
-├── GameRewards.test.js
-└── JyhhadGovernance.test.js
-
-migrations/
-└── 1_deploy_contracts.js
 ```
 
 ## 🚀 Funcionalidades
@@ -28,28 +19,24 @@ migrations/
 - Sistema de minting controlado
 - Mecanismo de queima (burning)
 - Controle de pausa
-- Proteção contra reentrancy
 
 ### NFTs VTES
 - Implementação ERC-721 para cartas
 - Sistema de raridade e níveis
 - Mecanismo de fusão de cartas
 - Marketplace integrado
-- Controle de acesso
 
 ### Sistema de Recompensas
 - Recompensas por jogo
 - Sistema de níveis
 - Multiplicadores de recompensa
 - Recompensas diárias
-- Proteção contra exploits
 
 ### Governança
 - Sistema de votação
 - Propostas e execução
 - Timelock para mudanças críticas
 - Quorum configurável
-- Controle de permissões
 
 ## 🛠️ Configuração do Ambiente
 
@@ -96,8 +83,6 @@ npm run migrate
 - Proteção contra reentrancy
 - Sistema de pausa de emergência
 - Timelock para operações críticas
-- Rate limiting
-- Overflow/Underflow protection
 
 ## 📚 Documentação
 
@@ -122,8 +107,4 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## 👥 Autores
 
 - Maikon Weber
-- Douglas
-
-## 🔍 Checklist de Implementação
-
-Consulte o arquivo [CHECKLIST.md](CHECKLIST.md) para acompanhar o progresso da implementação. 
+- Douglas 

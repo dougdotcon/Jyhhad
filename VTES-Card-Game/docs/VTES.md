@@ -200,34 +200,34 @@ Objeto 3: Biblioteca
 
 Objeto 4 : Cartas;
   1. Carta Cripta:
-    * Carta unica copia por vez
+   * Carta unica copia por vez
   ** Um Segundo Matusalem pode contestar o controle do Vampiro.
-    Atributos: Capacidade de Sangue.
-     1. Idade Relativa / + Sangue Mais Velho.  
-     2. Recurso Investido. / Não pode soprepor sua Capacidade -> Banco.
-     3. Habilidade Maxima repaarar ferimentos e Jogar Cartas.
-        ** Algumas Cartas custam sangue.
-    Atributos: Clã
-    Disciplinas:
-      Determinam qual cartas da biblioteca podem ser usadas com Servos
-        Quadradro:  Basico
-        Losangolo: Feito Superio e Basico
-    Icone Avan'cado
-    Caixa de Texto;
+   Atributos: Capacidade de Sangue.
+    1. Idade Relativa / + Sangue Mais Velho.  
+    2. Recurso Investido. / Não pode soprepor sua Capacidade -> Banco.
+    3. Habilidade Maxima repaarar ferimentos e Jogar Cartas.
+      ** Algumas Cartas custam sangue.
+   Atributos: Clã
+   Disciplinas:
+    Determinam qual cartas da biblioteca podem ser usadas com Servos
+      Quadradro:  Basico
+      Losangolo: Feito Superio e Basico
+   Icone Avan'cado
+   Caixa de Texto;
 
 
   2. Bibliotecas.
-    * Cada Possue um Clã.
-    * As vezes necessitam de membro do clã pra ser usado.
-    Atributos
-    Carta de Servo:
-      As Cartas de Servo sao Vampiros e Aliados
-      que matusalem controla
-      && 
-    Carta de Eventos : As Cartas de Evento sao colacadas 
-    em jogo durante a fase de descarte 
-    para representar eventos que aferam O mundo das trevas como um todas
-    REGRAS AVANÇADAS
+   * Cada Possue um Clã.
+   * As vezes necessitam de membro do clã pra ser usado.
+   Atributos
+   Carta de Servo:
+    As Cartas de Servo sao Vampiros e Aliados
+    que matusalem controla
+    && 
+   Carta de Eventos : As Cartas de Evento sao colacadas 
+   em jogo durante a fase de descarte 
+   para representar eventos que aferam O mundo das trevas como um todas
+   REGRAS AVANÇADAS
 Alguns efeitos podem cancelar uma carta "ao ser
 jogada". Esses efeitos, assim como os efeitos de
 despertar (consulte a pág. 42), são os únicos
@@ -239,12 +239,12 @@ de cartas vem após este período.
   Tipo de Carta : 
   Cla : Se Requirido;
   Custo :
-   
+  
   * Carta Mestre  
-    Existem duas categorias de cartas mestra 
-      Regular e Fora do Turno.
+   Existem duas categorias de cartas mestra 
+    Regular e Fora do Turno.
 
-      Local: Local: Uma carta de local representa um lugar
+    Local: Local: Uma carta de local representa um lugar
 (ou seja, um edifício, uma cidade ou um ponto
 de encontro) que um Matusalém ou seus ser-
 vos controlam. Uma carta de local permanece
@@ -270,24 +270,24 @@ Objeto 5 : Matusalem
 
 Objeto 6 : Turno;
   1. Fase de Destraver:
-    * Destrave todas as suas cartas e lide com todas as contestações
-      Se você tiver a Vantagem, voc*ê pode ganhar 1 de recurso do banco de sangue.
-    
+   * Destrave todas as suas cartas e lide com todas as contestações
+    Se você tiver a Vantagem, voc*ê pode ganhar 1 de recurso do banco de sangue.
+   
   2. Fase de Mestre:
-    * Faça ações da fase de mestre, representando a influencia direta do 
-    Matusalem
+   * Faça ações da fase de mestre, representando a influencia direta do 
+   Matusalem
 
   3. Fase de Servo:
-    Esta é geralmente a parte mais longa.
-    de seu turno post seu servos realizam 
-    uma ampla variaedade de ações usando 
-    habilidade ou cartas.
-    As ações pode ser Bloqueadas, oque pode resultar em combate.
+   Esta é geralmente a parte mais longa.
+   de seu turno post seu servos realizam 
+   uma ampla variaedade de ações usando 
+   habilidade ou cartas.
+   As ações pode ser Bloqueadas, oque pode resultar em combate.
 
   4. Fase de Influencia
-    Gane controle de vampiros em sua regiao nao controlada.
-    usando seus recursos e transferencias
-    ** Carta Cripta **2  
+   Gane controle de vampiros em sua regiao nao controlada.
+   usando seus recursos e transferencias
+   ** Carta Cripta **2  
   
   
   5. Fase de Descarte

@@ -6,13 +6,13 @@ O projeto Jyhhad utiliza uma combinação de armazenamento on-chain (blockchain)
 
 ```mermaid
 graph TD
-    A[Dados do Usuário] --> B[Banco de Dados Relacional]
-    C[Dados de Jogo] --> B
-    D[Estatísticas] --> B
-    E[Tokens e NFTs] --> F[Blockchain]
-    G[Governança] --> F
-    H[Marketplace] --> F
-    B <--> F[Blockchain]
+   A[Dados do Usuário] --> B[Banco de Dados Relacional]
+   C[Dados de Jogo] --> B
+   D[Estatísticas] --> B
+   E[Tokens e NFTs] --> F[Blockchain]
+   G[Governança] --> F
+   H[Marketplace] --> F
+   B <--> F[Blockchain]
 ```
 
 ## 🔗 Estrutura On-Chain
@@ -22,72 +22,72 @@ graph TD
 #### 1. SoulEnemyToken (ERC-20)
 ```solidity
 contract SoulEnemyToken is ERC20, Ownable {
-    // Propriedades principais
-    string public constant name = "Soul of Enemy";
-    string public constant symbol = "SOE";
-    uint8 public constant decimals = 18;
-    uint256 public constant initialSupply = 1_000_000_000 * 10**18;
-    
-    // Taxa de queima
-    uint256 public burnRate = 200; // 2%
-    
-    // Mapeamentos
-    mapping(address => bool) public excludedFromFees;
-    mapping(address => bool) public gameContracts;
+   // Propriedades principais
+   string public constant name = "Soul of Enemy";
+   string public constant symbol = "SOE";
+   uint8 public constant decimals = 18;
+   uint256 public constant initialSupply = 1_000_000_000 * 10**18;
+   
+   // Taxa de queima
+   uint256 public burnRate = 200; // 2%
+   
+   // Mapeamentos
+   mapping(address => bool) public excludedFromFees;
+   mapping(address => bool) public gameContracts;
 }
 ```
 
 #### 2. GameRewards
 ```solidity
 contract GameRewards {
-    // Estruturas
-    struct Reward {
-        uint256 amount;
-        uint256 timestamp;
-        string gameId;
-        string reason;
-    }
-    
-    // Mapeamentos
-    mapping(address => Reward[]) public userRewards;
-    mapping(string => uint256) public rewardRates;
+   // Estruturas
+   struct Reward {
+      uint256 amount;
+      uint256 timestamp;
+      string gameId;
+      string reason;
+   }
+   
+   // Mapeamentos
+   mapping(address => Reward[]) public userRewards;
+   mapping(string => uint256) public rewardRates;
 }
 ```
 
 #### 3. NFTItems
 ```solidity
 contract NFTItems is ERC721 {
-    // Estruturas
-    struct Item {
-        string itemType; // "skin", "board", "card", etc.
-        string gameId;
-        uint256 rarity;
-        string metadata;
-    }
-    
-    // Mapeamentos
-    mapping(uint256 => Item) public items;
+   // Estruturas
+   struct Item {
+      string itemType; // "skin", "board", "card", etc.
+      string gameId;
+      uint256 rarity;
+      string metadata;
+   }
+   
+   // Mapeamentos
+   mapping(uint256 => Item) public items;
 }
 ```
 
 #### 4. Governance
 ```solidity
 contract Governance {
-    // Estruturas
-    struct Proposal {
-        uint256 id;
-        address proposer;
-        string description;
-        uint256 forVotes;
-        uint256 againstVotes;
-        uint256 startTime;
-        uint256 endTime;
-        bool executed;
-    }
-    
-    // Mapeamentos
-    mapping(uint256 => Proposal) public proposals;
-    mapping(address => mapping(uint256 => bool)) public hasVoted;
+   // Estruturas
+   struct Proposal {
+      uint256 id;
+      address proposer;
+      string description;
+      uint256 forVotes;
+      uint256 againstVotes;
+      uint256 startTime;
+      uint256 endTime;
+      bool executed;
+   }
+   
+   // Mapeamentos
+   mapping(uint256 => Proposal) public proposals;
+   mapping(address => mapping(uint256 => bool)) public hasVoted;
 }
 ```
 

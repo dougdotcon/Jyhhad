@@ -17,40 +17,40 @@ O token "Soul of Enemy" (SOE) é o token nativo da plataforma Jyhhad, implementa
 
 ```mermaid
 pie title Distribuição Inicial de Tokens
-    "Jogadores" : 40
-    "Desenvolvimento" : 20
-    "Marketing" : 15
-    "Liquidez" : 15
-    "Treasury" : 10
+   "Jogadores" : 40
+   "Desenvolvimento" : 20
+   "Marketing" : 15
+   "Liquidez" : 15
+   "Treasury" : 10
 ```
 
 ### Detalhamento
 1. **Jogadores (40%)**
-   - Recompensas de jogo
-   - Eventos especiais
-   - Torneios
-   - Achievements
+  - Recompensas de jogo
+  - Eventos especiais
+  - Torneios
+  - Achievements
 
 2. **Desenvolvimento (20%)**
-   - Desenvolvimento de novos jogos
-   - Manutenção da plataforma
-   - Pesquisa e desenvolvimento
+  - Desenvolvimento de novos jogos
+  - Manutenção da plataforma
+  - Pesquisa e desenvolvimento
 
 3. **Marketing (15%)**
-   - Campanhas publicitárias
-   - Parcerias
-   - Influencers
-   - Eventos comunitários
+  - Campanhas publicitárias
+  - Parcerias
+  - Influencers
+  - Eventos comunitários
 
 4. **Liquidez (15%)**
-   - Pools de liquidez
-   - Market making
-   - Estabilidade de preço
+  - Pools de liquidez
+  - Market making
+  - Estabilidade de preço
 
 5. **Treasury (10%)**
-   - Reserva estratégica
-   - Emergências
-   - Governança
+  - Reserva estratégica
+  - Emergências
+  - Governança
 
 ## Mecânicas de Recompensa
 

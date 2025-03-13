@@ -6,13 +6,13 @@ O projeto Jyhhad é composto por três componentes principais que se integram pa
 
 ```mermaid
 graph TD
-    A[Jyhhad-Chess-Game] -->|Recompensas| B[SoulEnemySolidity]
-    C[VTES] -->|Recompensas| B
-    B -->|Tokens| A
-    B -->|Tokens| C
-    B -->|NFTs| D[Marketplace]
-    D -->|Itens| A
-    D -->|Cartas| C
+   A[Jyhhad-Chess-Game] -->|Recompensas| B[SoulEnemySolidity]
+   C[VTES] -->|Recompensas| B
+   B -->|Tokens| A
+   B -->|Tokens| C
+   B -->|NFTs| D[Marketplace]
+   D -->|Itens| A
+   D -->|Cartas| C
 ```
 
 ## 🧩 Componentes e suas Funções
@@ -46,34 +46,34 @@ graph TD
 
 ### 1. Fluxo de Recompensas
 1. **Geração de Recompensas**:
-   - Jogadores participam de partidas em Jyhhad-Chess-Game ou VTES
-   - O sistema registra vitórias, achievements e participação
-   - Smart contracts calculam as recompensas devidas
+  - Jogadores participam de partidas em Jyhhad-Chess-Game ou VTES
+  - O sistema registra vitórias, achievements e participação
+  - Smart contracts calculam as recompensas devidas
 
 2. **Distribuição de Tokens**:
-   - Tokens SOE são transferidos para a carteira do jogador
-   - Eventos especiais podem conceder bônus ou multiplicadores
-   - Torneios oferecem recompensas maiores
+  - Tokens SOE são transferidos para a carteira do jogador
+  - Eventos especiais podem conceder bônus ou multiplicadores
+  - Torneios oferecem recompensas maiores
 
 ### 2. Fluxo de Marketplace
 1. **Criação de Itens**:
-   - Desenvolvedores criam skins, tabuleiros, cartas e outros itens
-   - Itens são tokenizados como NFTs na blockchain
-   - Raridade e atributos são definidos nos metadados
+  - Desenvolvedores criam skins, tabuleiros, cartas e outros itens
+  - Itens são tokenizados como NFTs na blockchain
+  - Raridade e atributos são definidos nos metadados
 
 2. **Compra e Venda**:
-   - Jogadores usam tokens SOE para comprar itens
-   - Jogadores podem revender itens no marketplace
-   - Parte das taxas de transação é queimada (deflação)
+  - Jogadores usam tokens SOE para comprar itens
+  - Jogadores podem revender itens no marketplace
+  - Parte das taxas de transação é queimada (deflação)
 
 ### 3. Fluxo de Governança
 1. **Propostas**:
-   - Jogadores com tokens suficientes podem criar propostas
-   - Propostas podem incluir novos jogos, ajustes de recompensas, etc.
+  - Jogadores com tokens suficientes podem criar propostas
+  - Propostas podem incluir novos jogos, ajustes de recompensas, etc.
 
 2. **Votação**:
-   - Comunidade vota usando tokens SOE
-   - Decisões são implementadas via smart contracts
+  - Comunidade vota usando tokens SOE
+  - Decisões são implementadas via smart contracts
 
 ## 🔗 Pontos de Integração Técnica
 

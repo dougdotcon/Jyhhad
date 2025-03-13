@@ -8,7 +8,7 @@ O projeto Jyhhad visa criar uma plataforma de jogos descentralizada que integra:
 3. Tokenomics na blockchain Ethereum
 
 ### Metas Principais
-- Criar uma experiência de jogo inovadora e divertida
+- Criar uma experiência de jogo  a e divertida
 - Implementar um sistema de recompensas justo e sustentável
 - Estabelecer uma economia de tokens viável a longo prazo
 - Construir uma comunidade ativa e engajada
@@ -109,7 +109,7 @@ O projeto Jyhhad visa criar uma plataforma de jogos descentralizada que integra:
 ## 💡 Ideias Futuras
 
 ### Novos Jogos
-- Poker com mecânicas inovadoras
+- Poker com mecânicas  as
 - Jogos de estratégia baseados em turnos
 - Jogos de RPG com elementos blockchain
 

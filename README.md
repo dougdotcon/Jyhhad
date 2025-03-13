@@ -21,7 +21,7 @@
 ---
 
 ## 🎮 Visão Geral
-Jyhhad é uma plataforma inovadora que integra jogos clássicos com tokenomics na blockchain Ethereum. O projeto combina três componentes principais:
+Jyhhad é uma plataforma  a que integra jogos clássicos com tokenomics na blockchain Ethereum. O projeto combina três componentes principais:
 
 1. **Jyhhad-Chess-Game**: Um jogo de xadrez com tabuleiro hexagonal desenvolvido em Unity
 2. **SoulEnemySolidity**: Smart contracts para tokenomics e recompensas
@@ -31,14 +31,14 @@ Jyhhad é uma plataforma inovadora que integra jogos clássicos com tokenomics n
 
 ```
 Jyhhad/
-├── Jyhhad-Chess-Game/     # Jogo de xadrez hexagonal em Unity
-├── soulEnemySolidity/     # Smart contracts Ethereum
-├── VTES/                  # Implementação digital do VTES
-└── docs/                  # Documentação centralizada
-    ├── assets/            # Imagens e recursos visuais
-    ├── architecture.md    # Arquitetura do sistema
-    ├── tokenomics.md      # Economia e tokens
-    └── gameplay.md        # Regras e mecânicas
+├── Jyhhad-Chess-Game/    # Jogo de xadrez hexagonal em Unity
+├── soulEnemySolidity/    # Smart contracts Ethereum
+├── VTES/            # Implementação digital do VTES
+└── docs/            # Documentação centralizada
+   ├── assets/        # Imagens e recursos visuais
+   ├── architecture.md   # Arquitetura do sistema
+   ├── tokenomics.md    # Economia e tokens
+   └── gameplay.md      # Regras e mecânicas
 ```
 
 ## 🎯 Objetivo
@@ -53,42 +53,42 @@ Criar uma plataforma de jogos descentralizada onde:
 <details>
   <summary><b>1. Jyhhad-Chess-Game</b></summary>
   <ul>
-    <li>Tabuleiro hexagonal inovador</li>
-    <li>Sistema de recompensas integrado</li>
-    <li>Interface moderna e intuitiva</li>
-    <li>Multiplayer online</li>
+   <li>Tabuleiro hexagonal  </li>
+   <li>Sistema de recompensas integrado</li>
+   <li>Interface moderna e intuitiva</li>
+   <li>Multiplayer online</li>
   </ul>
 </details>
 
 <details>
   <summary><b>2. SoulEnemySolidity</b></summary>
   <ul>
-    <li>Token ERC-20 "Soul of Enemy"</li>
-    <li>Sistema de recompensas</li>
-    <li>Smart contracts para governança</li>
-    <li>Integração com jogos</li>
+   <li>Token ERC-20 "Soul of Enemy"</li>
+   <li>Sistema de recompensas</li>
+   <li>Smart contracts para governança</li>
+   <li>Integração com jogos</li>
   </ul>
 </details>
 
 <details>
   <summary><b>3. VTES</b></summary>
   <ul>
-    <li>Implementação digital do jogo de cartas</li>
-    <li>Sistema de ranking e recompensas</li>
-    <li>Integração com tokenomics</li>
-    <li>Multiplayer online</li>
+   <li>Implementação digital do jogo de cartas</li>
+   <li>Sistema de ranking e recompensas</li>
+   <li>Integração com tokenomics</li>
+   <li>Multiplayer online</li>
   </ul>
   
   <h4>Exemplos de Cartas</h4>
   <p align="center">
-    <img src="VTES/assets/cards/page_14_image_4.jpeg" alt="Carta VTES 1" width="150"/>
-    <img src="VTES/assets/cards/page_7_image_1.jpeg" alt="Carta VTES 2" width="150"/>
-    <img src="VTES/assets/cards/page_13_image_5.jpeg" alt="Carta VTES 3" width="150"/>
-    <img src="VTES/assets/cards/page_14_image_6.jpeg" alt="Carta VTES 4" width="150"/>
+   <img src="VTES/assets/cards/page_14_image_4.jpeg" alt="Carta VTES 1" width="150"/>
+   <img src="VTES/assets/cards/page_7_image_1.jpeg" alt="Carta VTES 2" width="150"/>
+   <img src="VTES/assets/cards/page_13_image_5.jpeg" alt="Carta VTES 3" width="150"/>
+   <img src="VTES/assets/cards/page_14_image_6.jpeg" alt="Carta VTES 4" width="150"/>
   </p>
   
   <p align="center">
-    <i>Vampire: The Eternal Struggle é um jogo de cartas estratégico baseado no universo de World of Darkness.</i>
+   <i>Vampire: The Eternal Struggle é um jogo de cartas estratégico baseado no universo de World of Darkness.</i>
   </p>
 </details>
 
@@ -155,18 +155,18 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 <table>
   <tr>
-    <td align="center">
-      <a href="https://github.com/maikonweber">
-        <b>Maikon Weber</b><br />
-        <sub>Desenvolvedor Principal</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/douglas">
-        <b>Douglas</b><br />
-        <sub>Desenvolvedor Principal</sub>
-      </a>
-    </td>
+   <td align="center">
+    <a href="https://github.com/maikonweber">
+      <b>Maikon Weber</b><br />
+      <sub>Desenvolvedor Principal</sub>
+    </a>
+   </td>
+   <td align="center">
+    <a href="https://github.com/douglas">
+      <b>Douglas</b><br />
+      <sub>Desenvolvedor Principal</sub>
+    </a>
+   </td>
   </tr>
 </table>
 

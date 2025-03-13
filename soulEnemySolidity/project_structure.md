@@ -2,31 +2,31 @@
 
 ```
 soulEnemySolidity/
-├── contracts/                # Contratos Solidity
-│   ├── SoulEnemy.sol        # Contrato principal
-│   ├── interfaces/          # Interfaces do contrato
-│   └── libraries/           # Bibliotecas auxiliares
-├── migrations/              # Scripts de migração
-│   ├── 1_initial_migration.js
-│   └── 2_deploy_contracts.js
-├── test/                    # Testes
-│   ├── SoulEnemy.test.js
-│   └── helpers/             # Funções auxiliares para testes
-├── scripts/                 # Scripts utilitários
-│   ├── deploy.js
-│   └── verify.js
-├── docs/                    # Documentação
-│   ├── technical/          # Documentação técnica
-│   └── api/                # Documentação da API
-├── build/                   # Arquivos compilados
-├── .github/                 # Configurações do GitHub
-├── .git/                    # Repositório Git
-├── .env                     # Variáveis de ambiente
-├── .gitignore              # Arquivos ignorados pelo Git
-├── package.json            # Dependências e scripts
-├── truffle-config.js       # Configuração do Truffle
-├── README.md               # Documentação principal
-└── LICENSE                 # Licença do projeto
+├── contracts/           # Contratos Solidity
+│  ├── SoulEnemy.sol      # Contrato principal
+│  ├── interfaces/       # Interfaces do contrato
+│  └── libraries/        # Bibliotecas auxiliares
+├── migrations/          # Scripts de migração
+│  ├── 1_initial_migration.js
+│  └── 2_deploy_contracts.js
+├── test/              # Testes
+│  ├── SoulEnemy.test.js
+│  └── helpers/         # Funções auxiliares para testes
+├── scripts/            # Scripts utilitários
+│  ├── deploy.js
+│  └── verify.js
+├── docs/              # Documentação
+│  ├── technical/       # Documentação técnica
+│  └── api/           # Documentação da API
+├── build/             # Arquivos compilados
+├── .github/            # Configurações do GitHub
+├── .git/              # Repositório Git
+├── .env              # Variáveis de ambiente
+├── .gitignore          # Arquivos ignorados pelo Git
+├── package.json        # Dependências e scripts
+├── truffle-config.js     # Configuração do Truffle
+├── README.md          # Documentação principal
+└── LICENSE            # Licença do projeto
 ```
 
 ## Descrição das Pastas

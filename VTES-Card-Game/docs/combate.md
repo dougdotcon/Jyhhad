@@ -6,15 +6,15 @@ O combate em VTES ocorre quando um servo tenta realizar uma ação e é bloquead
 
 ```mermaid
 flowchart TD
-    A[Início do Combate] --> B[1. Antes da Distância]
-    B --> C[2. Determinar Distância]
-    C --> D[3. Antes dos Golpes]
-    D --> E[4. Golpe]
-    E --> F[5. Resolução de Dano]
-    F --> G[6. Pressionar]
-    G -->|Pressionar| B
-    G -->|Não Pressionar| H[7. Fim da Rodada]
-    H --> I[Fim do Combate]
+   A[Início do Combate] --> B[1. Antes da Distância]
+   B --> C[2. Determinar Distância]
+   C --> D[3. Antes dos Golpes]
+   D --> E[4. Golpe]
+   E --> F[5. Resolução de Dano]
+   F --> G[6. Pressionar]
+   G -->|Pressionar| B
+   G -->|Não Pressionar| H[7. Fim da Rodada]
+   H --> I[Fim do Combate]
 ```
 
 ## 🔄 Sequência de Combate

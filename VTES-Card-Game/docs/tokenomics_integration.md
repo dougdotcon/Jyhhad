@@ -6,12 +6,12 @@ Este documento explica como o jogo VTES (Vampire: The Eternal Struggle) se integ
 
 ```mermaid
 graph TD
-    A[Jogador VTES] -->|Joga partidas| B[Sistema de Recompensas]
-    B -->|Gera| C[Tokens SOE]
-    C -->|Armazenados em| D[Carteira do Jogador]
-    D -->|Gasta em| E[Marketplace]
-    E -->|Adquire| F[Cartas Raras/NFTs]
-    F -->|Melhora| A
+   A[Jogador VTES] -->|Joga partidas| B[Sistema de Recompensas]
+   B -->|Gera| C[Tokens SOE]
+   C -->|Armazenados em| D[Carteira do Jogador]
+   D -->|Gasta em| E[Marketplace]
+   E -->|Adquire| F[Cartas Raras/NFTs]
+   F -->|Melhora| A
 ```
 
 ## 💎 Recompensas em Tokens
@@ -35,19 +35,19 @@ graph TD
 
 ### Tipos de NFTs
 1. **Cartas Raras**
-   - Versões especiais de cartas existentes
-   - Efeitos visuais únicos
-   - Algumas com habilidades exclusivas para modo casual
+  - Versões especiais de cartas existentes
+  - Efeitos visuais únicos
+  - Algumas com habilidades exclusivas para modo casual
 
 2. **Itens Cosméticos**
-   - Designs de tabuleiro
-   - Marcadores de sangue personalizados
-   - Animações de efeitos
+  - Designs de tabuleiro
+  - Marcadores de sangue personalizados
+  - Animações de efeitos
 
 3. **Títulos e Emblemas**
-   - Títulos exclusivos para perfil
-   - Emblemas de conquistas
-   - Indicadores de status
+  - Títulos exclusivos para perfil
+  - Emblemas de conquistas
+  - Indicadores de status
 
 ### Raridade e Distribuição
 - **Comum**: 65% de chance em pacotes

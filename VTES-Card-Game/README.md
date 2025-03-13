@@ -6,14 +6,14 @@ Este é um projeto de implementação digital do jogo de cartas Vampire: The Ete
 
 ```
 VTES/
-├── assets/           # Recursos e arquivos de mídia
-│   └── v5_rulebook_pt-br_02bLogo.pdf  # Manual de regras em português
-├── docs/            # Documentação do projeto
-│   └── VTES.md      # Regras básicas e mecânicas do jogo
-├── gameplay/        # Lógica e mecânicas de jogo
-│   ├── Turnos       # Implementação das fases do turno
-│   └── GamingStart.md  # Instruções de início de jogo
-└── README.md        # Este arquivo
+├── assets/        # Recursos e arquivos de mídia
+│  └── v5_rulebook_pt-br_02bLogo.pdf  # Manual de regras em português
+├── docs/        # Documentação do projeto
+│  └── VTES.md    # Regras básicas e mecânicas do jogo
+├── gameplay/      # Lógica e mecânicas de jogo
+│  ├── Turnos     # Implementação das fases do turno
+│  └── GamingStart.md  # Instruções de início de jogo
+└── README.md      # Este arquivo
 ```
 
 ## 🎮 Sobre o Jogo
@@ -29,17 +29,17 @@ VTES é um jogo de cartas para 4-5 jogadores onde cada jogador assume o papel de
 ## 📋 Como Testar
 
 1. **Preparação**:
-   - Cada jogador começa com 30 marcadores de sangue
-   - Separe as cartas em dois baralhos: Cripta e Biblioteca
-   - Distribua 7 cartas da Biblioteca para sua mão
-   - Coloque 4 cartas da Cripta na região não controlada
+  - Cada jogador começa com 30 marcadores de sangue
+  - Separe as cartas em dois baralhos: Cripta e Biblioteca
+  - Distribua 7 cartas da Biblioteca para sua mão
+  - Coloque 4 cartas da Cripta na região não controlada
 
 2. **Sequência de Turno**:
-   - Fase de Destravar
-   - Fase de Mestre
-   - Fase de Servo
-   - Fase de Influência
-   - Fase de Descarte
+  - Fase de Destravar
+  - Fase de Mestre
+  - Fase de Servo
+  - Fase de Influência
+  - Fase de Descarte
 
 ## 📚 Documentação
 

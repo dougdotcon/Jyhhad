@@ -23,11 +23,11 @@ O sistema Jyhhad é composto por três componentes principais que se integram pa
 
 ```mermaid
 graph TD
-    A[Jogos Unity/Web] --> B[API Gateway]
-    B --> C[Smart Contracts]
-    C --> D[Blockchain Ethereum]
-    B --> E[Servidor de Jogos]
-    E --> F[Banco de Dados]
+   A[Jogos Unity/Web] --> B[API Gateway]
+   B --> C[Smart Contracts]
+   C --> D[Blockchain Ethereum]
+   B --> E[Servidor de Jogos]
+   E --> F[Banco de Dados]
 ```
 
 ## Componentes Principais

@@ -6,9 +6,9 @@ A ordem dos assentos pode ser determinada por qualquer método que os Matusalén
 
 1. Determine aleatoriamente um Matusalém para atuar como o primeiro
 2. Para cada Matusalém, o Matusalém à sua **esquerda** é sua **presa** (🎯)
-   - Este é o Matusalém que você espera eliminar da partida
+  - Este é o Matusalém que você espera eliminar da partida
 3. O Matusalém à sua **direita** é o seu **predador** (🦈)
-   - Este é o Matusalém que espera eliminá-lo da partida
+  - Este é o Matusalém que espera eliminá-lo da partida
 4. Quando sua presa é eliminada, o próximo Matusalém à sua esquerda torna-se sua nova presa
 
 > **Dica**: A dinâmica presa-predador é fundamental para o equilíbrio do jogo. Foque em sua presa, mas fique atento ao seu predador!
@@ -27,25 +27,25 @@ A área em frente a cada Matusalém é dividida em regiões:
 ### Regiões Principais
 1. **Região não controlada** - Área onde ficam os vampiros ainda não influenciados
 2. **Região controlada** - Subdividida em:
-   - **Região pronta** - Vampiros ativos e prontos para agir
-   - **Região de torpor** - Área especial para vampiros feridos
+  - **Região pronta** - Vampiros ativos e prontos para agir
+  - **Região de torpor** - Área especial para vampiros feridos
 
 > **Nota**: Conforme a partida avança, você ganhará o controle de alguns de seus servos, movendo-os para a região pronta, com a face para cima.
 
 ## 🃏 Preparação dos Baralhos
 
 1. **Separação dos baralhos**:
-   - Separe as cartas de cripta das cartas de biblioteca
-   - Embaralhe os dois baralhos
-   - Permita que seu predador corte ambos
-   - Coloque os dois baralhos à sua frente
+  - Separe as cartas de cripta das cartas de biblioteca
+  - Embaralhe os dois baralhos
+  - Permita que seu predador corte ambos
+  - Coloque os dois baralhos à sua frente
 
 2. **Distribuição inicial**:
-   - Compre as **sete primeiras cartas** do topo da biblioteca para formar sua mão
-   - Distribua as **quatro primeiras cartas** do topo da cripta com a face para baixo em sua região não controlada
+  - Compre as **sete primeiras cartas** do topo da biblioteca para formar sua mão
+  - Distribua as **quatro primeiras cartas** do topo da cripta com a face para baixo em sua região não controlada
 
 3. **Visualização**:
-   - Você pode olhar as cartas em sua mão e em sua região não controlada a qualquer momento durante a partida
+  - Você pode olhar as cartas em sua mão e em sua região não controlada a qualquer momento durante a partida
 
 ## 📊 Resumo da Preparação
 

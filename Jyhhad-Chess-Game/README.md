@@ -4,51 +4,51 @@ Um jogo de xadrez desenvolvido em Unity com um tabuleiro hexagonal único.
 
 ## 📋 Descrição
 
-Este é um jogo de xadrez com uma abordagem inovadora, utilizando um tabuleiro hexagonal ao invés do tradicional tabuleiro quadrado. O jogo mantém as regras básicas do xadrez, mas com mecânicas adaptadas para o formato hexagonal.
+Este é um jogo de xadrez com uma abordagem  a, utilizando um tabuleiro hexagonal ao invés do tradicional tabuleiro quadrado. O jogo mantém as regras básicas do xadrez, mas com mecânicas adaptadas para o formato hexagonal.
 
 ## 🎮 Estrutura do Projeto
 
 ```
 Jyhhad-Chess-Game/
 ├── Scripts/
-│   ├── Core/                    # Scripts principais do jogo
-│   │   ├── GameManager.cs       # Gerencia o estado do jogo e turnos
-│   │   └── GameManagerProxy1.cs # Proxy para comunicação entre componentes
-│   ├── Gameplay/               # Scripts relacionados ao tabuleiro e mecânicas
-│   │   ├── HexGrid.cs          # Gerencia o grid hexagonal
-│   │   ├── HexCell.cs          # Controla cada célula do tabuleiro
-│   │   ├── HexMesh.cs          # Gera a malha hexagonal
-│   │   └── HexMetrics.cs       # Define métricas e constantes do hexágono
-│   ├── UI/                     # Scripts de interface e câmera
-│   │   ├── InputScript.cs      # Gerencia input do jogador
-│   │   └── CameraMovement.cs   # Controla movimento da câmera
-│   └── Utils/                  # Scripts utilitários
-│       └── HexCoordinates.cs   # Sistema de coordenadas hexagonais
-├── Prefabs/                    # Prefabs do Unity
-│   ├── HexPrefab.prefab       # Prefab da célula hexagonal
-│   ├── textPrefab.prefab      # Prefab para textos da UI
-│   └── Canvas.prefab          # Prefab da interface principal
-├── Scenes/                     # Cenas do Unity
-└── Resources/                  # Recursos do jogo
+│  ├── Core/              # Scripts principais do jogo
+│  │  ├── GameManager.cs     # Gerencia o estado do jogo e turnos
+│  │  └── GameManagerProxy1.cs # Proxy para comunicação entre componentes
+│  ├── Gameplay/          # Scripts relacionados ao tabuleiro e mecânicas
+│  │  ├── HexGrid.cs       # Gerencia o grid hexagonal
+│  │  ├── HexCell.cs       # Controla cada célula do tabuleiro
+│  │  ├── HexMesh.cs       # Gera a malha hexagonal
+│  │  └── HexMetrics.cs     # Define métricas e constantes do hexágono
+│  ├── UI/              # Scripts de interface e câmera
+│  │  ├── InputScript.cs    # Gerencia input do jogador
+│  │  └── CameraMovement.cs  # Controla movimento da câmera
+│  └── Utils/            # Scripts utilitários
+│     └── HexCoordinates.cs  # Sistema de coordenadas hexagonais
+├── Prefabs/              # Prefabs do Unity
+│  ├── HexPrefab.prefab     # Prefab da célula hexagonal
+│  ├── textPrefab.prefab    # Prefab para textos da UI
+│  └── Canvas.prefab       # Prefab da interface principal
+├── Scenes/              # Cenas do Unity
+└── Resources/            # Recursos do jogo
 ```
 
 ## 🛠️ Como Testar
 
 1. **Requisitos**:
-   - Unity 2022.3 LTS ou superior
-   - Visual Studio 2019 ou superior
-   - Git (opcional, para controle de versão)
+  - Unity 2022.3 LTS ou superior
+  - Visual Studio 2019 ou superior
+  - Git (opcional, para controle de versão)
 
 2. **Configuração**:
-   - Clone o repositório
-   - Abra o projeto no Unity Hub
-   - Aguarde a importação dos assets
+  - Clone o repositório
+  - Abra o projeto no Unity Hub
+  - Aguarde a importação dos assets
 
 3. **Executando o Jogo**:
-   - Abra a cena principal em `Scenes/`
-   - Pressione o botão Play no Unity Editor
-   - Use o mouse para interagir com as peças
-   - Rotacione a câmera com o botão direito do mouse
+  - Abra a cena principal em `Scenes/`
+  - Pressione o botão Play no Unity Editor
+  - Use o mouse para interagir com as peças
+  - Rotacione a câmera com o botão direito do mouse
 
 ## 🎯 Funcionalidades
 

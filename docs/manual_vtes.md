@@ -50,25 +50,25 @@ Vampire: The Eternal Struggle (VTES) é um jogo de cartas colecionáveis baseado
 
 ### Tipos de Cartas
 1. **Vampiros**
-   - Representam seus personagens principais
-   - Têm capacidade (custo em pool)
-   - Possuem clã e disciplina
+  - Representam seus personagens principais
+  - Têm capacidade (custo em pool)
+  - Possuem clã e disciplina
 
 2. **Ações**
-   - Representam ações que seus vampiros podem realizar
-   - Podem ser básicas ou avançadas
+  - Representam ações que seus vampiros podem realizar
+  - Podem ser básicas ou avançadas
 
 3. **Reações**
-   - Podem ser jogadas em resposta a ações
-   - Geralmente são usadas para defesa
+  - Podem ser jogadas em resposta a ações
+  - Geralmente são usadas para defesa
 
 4. **Eventos**
-   - Afetam o jogo de forma global
-   - Podem ser permanentes ou temporários
+  - Afetam o jogo de forma global
+  - Podem ser permanentes ou temporários
 
 5. **Equipamentos**
-   - Anexados aos vampiros
-   - Fornecem bônus ou habilidades
+  - Anexados aos vampiros
+  - Fornecem bônus ou habilidades
 
 ### Disciplinas
 - **Auspex**: Percepção e previsão
@@ -86,24 +86,24 @@ Vampire: The Eternal Struggle (VTES) é um jogo de cartas colecionáveis baseado
 
 ### Dicas para Iniciantes
 1. **Construção do Baralho**
-   - Comece com 60-90 cartas
-   - Mantenha uma proporção equilibrada de vampiros e ações
-   - Inclua cartas de reação para defesa
+  - Comece com 60-90 cartas
+  - Mantenha uma proporção equilibrada de vampiros e ações
+  - Inclua cartas de reação para defesa
 
 2. **Gerenciamento de Recursos**
-   - Mantenha pool de sangue para emergências
-   - Não gaste todas as cartas da mão rapidamente
-   - Planeje suas ações com antecedência
+  - Mantenha pool de sangue para emergências
+  - Não gaste todas as cartas da mão rapidamente
+  - Planeje suas ações com antecedência
 
 3. **Combate**
-   - Avalie o risco antes de atacar
-   - Mantenha cartas de combate na mão
-   - Use disciplinas de forma eficiente
+  - Avalie o risco antes de atacar
+  - Mantenha cartas de combate na mão
+  - Use disciplinas de forma eficiente
 
 4. **Objetivos**
-   - Foque em reduzir o pool do oponente
-   - Proteja seus vampiros importantes
-   - Mantenha pressão constante
+  - Foque em reduzir o pool do oponente
+  - Proteja seus vampiros importantes
+  - Mantenha pressão constante
 
 ## Glossário
 
