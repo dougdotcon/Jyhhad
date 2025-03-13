@@ -95,7 +95,7 @@ Criar uma plataforma de jogos descentralizada onde:
 ## 🧛‍♂️ Destaque: VTES (Vampire: The Eternal Struggle)
 
 <p align="center">
-  <img src="VTES/assets/cards/page_7_image_3.jpeg" alt="Carta VTES Principal" width="180"/>
+  <img src="VTES-Card-Game/assets/cards/page_7_image_3.jpeg" alt="Carta VTES Principal" width="180"/>
 </p>
 
 VTES é um jogo de cartas colecionáveis criado por Richard Garfield, o mesmo criador de Magic: The Gathering. Nossa implementação digital traz:
@@ -106,10 +106,10 @@ VTES é um jogo de cartas colecionáveis criado por Richard Garfield, o mesmo cr
 - **Integração Blockchain**: Cartas raras podem ser tokenizadas como NFTs
 
 <p align="center">
-  <img src="VTES/assets/cards/page_12_image_6.jpeg" alt="Carta VTES 5" width="120"/>
-  <img src="VTES/assets/cards/page_9_image_8.jpeg" alt="Carta VTES 6" width="120"/>
-  <img src="VTES/assets/cards/page_10_image_4.jpeg" alt="Carta VTES 7" width="120"/>
-  <img src="VTES/assets/cards/page_8_image_3.jpeg" alt="Carta VTES 8" width="120"/>
+  <img src="VTES-Card-Game/assets/cards/page_12_image_6.jpeg" alt="Carta VTES 5" width="120"/>
+  <img src="VTES-Card-Game/assets/cards/page_9_image_8.jpeg" alt="Carta VTES 6" width="120"/>
+  <img src="VTES-Card-Game/assets/cards/page_10_image_4.jpeg" alt="Carta VTES 7" width="120"/>
+  <img src="VTES-Card-Game/assets/cards/page_8_image_3.jpeg" alt="Carta VTES 8" width="120"/>
 </p>
 
 ## 🚀 Como Começar
