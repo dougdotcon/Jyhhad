@@ -81,10 +81,10 @@ Criar uma plataforma de jogos descentralizada onde:
   
   <h4>Exemplos de Cartas</h4>
   <p align="center">
-   <img src="VTES/assets/cards/page_14_image_4.jpeg" alt="Carta VTES 1" width="150"/>
-   <img src="VTES/assets/cards/page_7_image_1.jpeg" alt="Carta VTES 2" width="150"/>
-   <img src="VTES/assets/cards/page_13_image_5.jpeg" alt="Carta VTES 3" width="150"/>
-   <img src="VTES/assets/cards/page_14_image_6.jpeg" alt="Carta VTES 4" width="150"/>
+   <img src="VTES-Card-Game/assets/cards/page_14_image_4.jpeg" alt="Carta VTES 1" width="150"/>
+   <img src="VTES-Card-Game/assets/cards/page_7_image_1.jpeg" alt="Carta VTES 2" width="150"/>
+   <img src="VTES-Card-Game/assets/cards/page_13_image_5.jpeg" alt="Carta VTES 3" width="150"/>
+   <img src="VTES-Card-Game/assets/cards/page_14_image_6.jpeg" alt="Carta VTES 4" width="150"/>
   </p>
   
   <p align="center">
