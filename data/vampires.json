@@ -1,0 +1,195 @@
+[
+  {
+    "id": "vampire-200084",
+    "name": "Andrei Puxon",
+    "type": "vampire",
+    "clan": "ANDREI_PUXTON",
+    "capacity": 1,
+    "disciplines": [
+      "RAVNOS"
+    ],
+    "cardText": "",
+    "group": 2,
+    "advanced": false,
+    "title": "ani cel chi for",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "Independent.",
+    "set": "DS:V, Tenth:B, POD:DTC",
+    "rarity": null,
+    "banned": false
+  },
+  {
+    "id": "vampire-200181",
+    "name": "Béatrice \"Oracle171\" Tremblay",
+    "type": "vampire",
+    "clan": "BEATRICE_\"ORACLE171\"_TREMBLAY",
+    "capacity": 1,
+    "disciplines": [
+      "INNOCENT"
+    ],
+    "cardText": "",
+    "group": 4,
+    "advanced": false,
+    "title": "inn ven",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "During your unlock phase, another ready imbued you control takes 1 unpreventable damage. +1 bleed.",
+    "set": "NoR:U",
+    "rarity": null,
+    "banned": false
+  },
+  {
+    "id": "vampire-200240",
+    "name": "Camille Devereux, The Raven",
+    "type": "vampire",
+    "clan": "CAMILLE_DEVEREUX;_RAVEN",
+    "capacity": 1,
+    "disciplines": [
+      "GANGREL"
+    ],
+    "cardText": "",
+    "group": 1,
+    "advanced": false,
+    "title": "ani FOR PRO",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "Camarilla.",
+    "set": "Jyhad:V, VTES:V, Tenth:A",
+    "rarity": null,
+    "banned": false
+  },
+  {
+    "id": "vampire-200259",
+    "name": "Céleste Lamontagne",
+    "type": "vampire",
+    "clan": "CÉLÈSTE_LAMONTAGNE",
+    "capacity": 1,
+    "disciplines": [
+      "GANGREL",
+      "ANTITRIBU"
+    ],
+    "cardText": "",
+    "group": 4,
+    "advanced": false,
+    "title": "for ANI PRO",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "Sabbat: Cél{e}ste can strike{: combat ends in combat with} a werewolf{}. She gets +1 intercept {against}{} Camarilla vampire{s} whose controller {controls}{} {any} Gehenna card{s}{}.",
+    "set": "Gehenna:U",
+    "rarity": null,
+    "banned": false
+  },
+  {
+    "id": "vampire-200439",
+    "name": "Étienne Fauberge",
+    "type": "vampire",
+    "clan": "ETIENNE_FAUBERGE",
+    "capacity": 1,
+    "disciplines": [
+      "RAVNOS"
+    ],
+    "cardText": "",
+    "group": 3,
+    "advanced": false,
+    "title": "ANI CEL CHI FOR",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "Independent: Actions directed at Étienne cost 1 additional blood. Damage from Étienne's hand strikes is aggravated in combat with a Baali or Follower of Set.",
+    "set": "Anarchs:U2, POD:DTC",
+    "rarity": null,
+    "banned": false
+  },
+  {
+    "id": "vampire-200479",
+    "name": "François \"Warden\" Loehr",
+    "type": "vampire",
+    "clan": "FRANCOIS_\"WARDEN\"_LOEHR",
+    "capacity": 1,
+    "disciplines": [
+      "JUDGE"
+    ],
+    "cardText": "",
+    "group": 4,
+    "advanced": false,
+    "title": "def jud",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "Other Methuselahs' actions that target François cost an additional blood or life.",
+    "set": "NoR:U",
+    "rarity": null,
+    "banned": false
+  },
+  {
+    "id": "vampire-200800",
+    "name": "L'Épuisette",
+    "type": "vampire",
+    "clan": "L'EPUISETTE",
+    "capacity": 1,
+    "disciplines": [
+      "TOREADOR",
+      "ANTITRIBU"
+    ],
+    "cardText": "",
+    "group": 4,
+    "advanced": false,
+    "title": "aus cel pro",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "Sabbat: L'Épuisette gets +1 bleed against a Methuselah who controls a ready Toreador.",
+    "set": "KMW:U, SP:LB1",
+    "rarity": null,
+    "banned": false
+  },
+  {
+    "id": "vampire-201257",
+    "name": "Sébastien Goulet",
+    "type": "vampire",
+    "clan": "SÉBASTIAN_GOULET",
+    "capacity": 1,
+    "disciplines": [
+      "GANGREL",
+      "ANTITRIBU"
+    ],
+    "cardText": "",
+    "group": 3,
+    "advanced": false,
+    "title": "cel pre pro DOM OBF",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "Sabbat: Allies and retainers cost Sébasti{e}n 1 less blood or pool{}. Once each action, he can burn 1 blood to get +1 bleed.",
+    "set": "CE:V, BSC:X",
+    "rarity": null,
+    "banned": false
+  },
+  {
+    "id": "vampire-201258",
+    "name": "Sébastien Goulet",
+    "type": "vampire",
+    "clan": "SÉBASTIAN_GOULET",
+    "capacity": 1,
+    "disciplines": [
+      "GANGREL",
+      "ANTITRIBU"
+    ],
+    "cardText": "Advanced",
+    "group": 3,
+    "advanced": false,
+    "title": "cel pre pro DOM OBF",
+    "blood": 1,
+    "ready": false,
+    "actions": 0,
+    "artist": "Sabbat: Sébasti{e}n gets +1 stealth {on recruit and employ actions}.\n[MERGED] He can steal a{n ally or retainer} as a +1 stealth (D) action.",
+    "set": "BH:U2",
+    "rarity": null,
+    "banned": false
+  }
+]
