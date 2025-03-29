@@ -1,0 +1,134 @@
+[2025-03-29T14:19:22.580Z] [DEBUG] Mensagem recebida do servidor
+{
+  "type": "connected",
+  "id": "127.0.0.1:49499",
+  "message": "Conectado ao servidor VTES"
+}
+[2025-03-29T14:19:22.584Z] [SUCCESS] Conectado ao servidor como 127.0.0.1:49499
+[2025-03-29T14:19:23.595Z] [INFO] Buscando vampiros da API
+{
+  "clan": "VENTRUE"
+}
+[2025-03-29T14:19:23.620Z] [INFO] Criando deck aleatório
+[2025-03-29T14:19:23.625Z] [INFO] Validando deck
+[2025-03-29T14:19:23.629Z] [ERROR] Deck inválido
+{
+  "isValid": false,
+  "errors": [
+    "Deck deve ter no mínimo 12 cartas"
+  ],
+  "warnings": [],
+  "stats": {
+    "totalCards": 0,
+    "uniqueCards": 0,
+    "averageCapacity": null,
+    "disciplines": {}
+  }
+}
+[2025-03-29T14:20:17.699Z] [INFO] Encerrando cliente...
+[2025-03-29T14:20:17.902Z] [INFO] Encerrando cliente...
+[2025-03-29T14:20:21.065Z] [INFO] Carregados 9 vampiros do banco de dados
+[2025-03-29T14:20:21.075Z] [SUCCESS] API VTES rodando na porta 3000
+[2025-03-29T14:20:30.442Z] [DEBUG] Mensagem recebida do servidor
+{
+  "type": "connected",
+  "id": "127.0.0.1:55604",
+  "message": "Conectado ao servidor VTES"
+}
+[2025-03-29T14:20:30.445Z] [SUCCESS] Conectado ao servidor como 127.0.0.1:55604
+[2025-03-29T14:20:31.460Z] [INFO] Buscando vampiros da API
+{
+  "clan": "VENTRUE"
+}
+[2025-03-29T14:20:31.486Z] [DEBUG] GET /api/cards/vampires/clan/VENTRUE
+{
+  "query": {},
+  "body": {}
+}
+[2025-03-29T14:20:31.488Z] [INFO] Encontrados 0 vampiros do clã VENTRUE
+[2025-03-29T14:20:31.499Z] [ERROR] Nenhum vampiro encontrado para o clã especificado
+[2025-03-29T14:21:34.087Z] [INFO] Carregados 9 vampiros do banco de dados
+[2025-03-29T14:21:34.098Z] [SUCCESS] API VTES rodando na porta 3000
+[2025-03-29T14:21:37.070Z] [INFO] Encerrando cliente...
+[2025-03-29T14:21:39.211Z] [DEBUG] Mensagem recebida do servidor
+{
+  "type": "connected",
+  "id": "127.0.0.1:50453",
+  "message": "Conectado ao servidor VTES"
+}
+[2025-03-29T14:21:39.212Z] [SUCCESS] Conectado ao servidor como 127.0.0.1:50453
+[2025-03-29T14:21:40.223Z] [INFO] Buscando vampiros da API
+{
+  "clan": "GANGREL"
+}
+[2025-03-29T14:21:40.244Z] [DEBUG] GET /api/cards/vampires/clan/VENTRUE
+{
+  "query": {},
+  "body": {}
+}
+[2025-03-29T14:21:40.246Z] [INFO] Encontrados 0 vampiros do clã VENTRUE
+[2025-03-29T14:21:40.257Z] [ERROR] Nenhum vampiro encontrado para o clã especificado
+[2025-03-29T14:22:19.461Z] [INFO] Carregados 9 vampiros do banco de dados
+[2025-03-29T14:22:19.472Z] [SUCCESS] API VTES rodando na porta 3000
+[2025-03-29T14:22:21.345Z] [DEBUG] Mensagem recebida do servidor
+{
+  "type": "serverShutdown",
+  "message": "Servidor está sendo desligado"
+}
+[2025-03-29T14:22:21.346Z] [WARN] Tipo de mensagem desconhecido
+{
+  "type": "serverShutdown",
+  "message": "Servidor está sendo desligado"
+}
+[2025-03-29T14:22:26.758Z] [INFO] Encerrando cliente...
+[2025-03-29T14:22:27.004Z] [INFO] Encerrando cliente...
+[2025-03-29T14:22:28.704Z] [DEBUG] Mensagem recebida do servidor
+{
+  "type": "connected",
+  "id": "127.0.0.1:49309",
+  "message": "Conectado ao servidor VTES"
+}
+[2025-03-29T14:22:28.708Z] [SUCCESS] Conectado ao servidor como 127.0.0.1:49309
+[2025-03-29T14:22:29.718Z] [INFO] Buscando vampiros da API
+{
+  "clan": "GANGREL"
+}
+[2025-03-29T14:22:29.741Z] [DEBUG] GET /api/cards/vampires/clan/GANGREL
+{
+  "query": {},
+  "body": {}
+}
+[2025-03-29T14:22:29.743Z] [INFO] Encontrados 4 vampiros do clã GANGREL
+[2025-03-29T14:22:29.753Z] [INFO] Criando deck aleatório
+[2025-03-29T14:22:29.769Z] [DEBUG] POST /api/cards/deck/random
+{
+  "query": {},
+  "body": {
+    "clan": "GANGREL",
+    "minCapacity": 4,
+    "maxCapacity": 8,
+    "count": 12
+  }
+}
+[2025-03-29T14:22:29.771Z] [INFO] Criando deck aleatório
+{
+  "clan": "GANGREL",
+  "minCapacity": 4,
+  "maxCapacity": 8,
+  "count": 12
+}
+[2025-03-29T14:22:29.773Z] [DEBUG] Filtrados 4 vampiros do clã GANGREL
+[2025-03-29T14:22:29.774Z] [ERROR] Não há vampiros suficientes do clã especificado
+{
+  "clan": "GANGREL",
+  "available": 4,
+  "required": 12
+}
+[2025-03-29T14:22:29.778Z] [ERROR] Erro ao criar deck
+{
+  "error": "Não há vampiros suficientes do clã especificado",
+  "available": 4,
+  "required": 12
+}
+[2025-03-29T14:29:28.126Z] [INFO] Encerrando cliente...
+[2025-03-29T14:29:28.301Z] [INFO] Encerrando cliente...

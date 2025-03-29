@@ -1,22 +1,25 @@
 // Cliente de teste para o servidor de jogo UDP
-const dgram = require('dgram');
+const dgram = require('node:dgram');
 const client = dgram.createSocket('udp4');
+const fetch = require('node-fetch');
+const logger = require('./utils/logger');
 
 // Configurações do servidor
 const SERVER_PORT = 41234;
 const SERVER_HOST = '127.0.0.1';
+const API_URL = 'http://localhost:3000/api';
 let playerId = null;
 
 // Dados do jogador simulado
 const playerData = {
-  name: 'Player' + Math.floor(Math.random() * 1000),
-  selectedClan: 'VENTRUE',
+  name: `Player${Math.floor(Math.random() * 1000)}`,
+  selectedClan: 'GANGREL',
   deck: [],
   crypt: []
 };
 
 // Estado do jogo local
-let gameState = {
+const gameState = {
   currentPhase: null,
   hand: [],
   ready_region: [],
@@ -31,11 +34,85 @@ let gameState = {
   testSequence: 0 // Controle da sequência de testes
 };
 
+// Função para buscar cartas da API
+async function fetchCardsFromAPI() {
+  try {
+    logger.info('Buscando vampiros da API', { clan: playerData.selectedClan });
+    const response = await fetch(`${API_URL}/cards/vampires/clan/${playerData.selectedClan}`);
+    if (!response.ok) {
+      throw new Error(`Erro ao buscar vampiros: ${response.statusText}`);
+    }
+    const vampires = await response.json();
+    
+    if (!vampires || vampires.length === 0) {
+      logger.error('Nenhum vampiro encontrado para o clã especificado');
+      return null;
+    }
+    
+    // Criar deck aleatório
+    logger.info('Criando deck aleatório');
+    const deckResponse = await fetch(`${API_URL}/cards/deck/random`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        clan: playerData.selectedClan,
+        minCapacity: 4,
+        maxCapacity: 8,
+        count: 12
+      })
+    });
+    
+    if (!deckResponse.ok) {
+      const errorData = await deckResponse.json();
+      logger.error('Erro ao criar deck', errorData);
+      return null;
+    }
+    
+    const deck = await deckResponse.json();
+    
+    if (!deck || deck.length === 0) {
+      logger.error('Deck vazio retornado pela API');
+      return null;
+    }
+    
+    // Validar deck
+    logger.info('Validando deck');
+    const validationResponse = await fetch(`${API_URL}/cards/deck/validate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ deck })
+    });
+    
+    if (!validationResponse.ok) {
+      const errorData = await validationResponse.json();
+      logger.error('Erro ao validar deck', errorData);
+      return null;
+    }
+    
+    const validation = await validationResponse.json();
+    
+    if (!validation.isValid) {
+      logger.error('Deck inválido', validation);
+      return null;
+    }
+    
+    logger.success('Deck criado com sucesso', validation.stats);
+    return deck;
+  } catch (error) {
+    logger.error('Erro ao buscar cartas da API', { error: error.message });
+    return null;
+  }
+}
+
 // Tratamento de mensagens recebidas
 client.on('message', (message, rinfo) => {
   try {
     const data = JSON.parse(message.toString());
-    console.log('Recebido do servidor:', data);
+    logger.debug('Mensagem recebida do servidor', data);
     
     switch (data.type) {
       case 'connected':
@@ -81,47 +158,47 @@ client.on('message', (message, rinfo) => {
       case 'gameEnded':
         handleGameEnded(data);
         break;
+        
+      case 'error':
+        logger.error('Erro do servidor', data);
+        break;
+        
+      default:
+        logger.warn('Tipo de mensagem desconhecido', data);
     }
   } catch (error) {
-    console.error('Erro ao processar mensagem:', error);
+    logger.error('Erro ao processar mensagem', { error: error.message });
   }
 });
 
 // Handlers de eventos
 function handleConnected(data) {
   playerId = data.id;
-  console.log(`Conectado ao servidor como ${playerId}`);
+  logger.success(`Conectado ao servidor como ${playerId}`);
   
   // Iniciar sequência de testes após conexão
   setTimeout(runNextTest, 1000);
 }
 
 function handleGameCreated(data) {
-  console.log('Jogo criado:', data.game);
+  logger.info('Jogo criado', data.game);
   gameState.gameId = data.game.id;
   runNextTest();
 }
 
 function handleGameJoined(data) {
-  console.log('Entrou no jogo:', data.game);
+  logger.info('Entrou no jogo', data.game);
   updateGameState(data.game);
   runNextTest();
 }
 
 function handleTurnStarted(data) {
-  console.log('=== Turno iniciado ===');
-  console.log('Jogador:', data.playerId);
-  console.log('Número do turno:', data.turnNumber);
-  console.log('Fase:', data.phase);
-  
-  if (data.playerState) {
-    console.log('Estado do jogador:');
-    console.log('- Mão:', data.playerState.hand.length, 'cartas');
-    console.log('- Vampiros prontos:', data.playerState.ready_region.length);
-    console.log('- Região não controlada:', data.playerState.uncontrolled_region.length);
-    console.log('- Pool:', data.playerState.pool);
-    console.log('- Influência:', data.playerState.influence);
-  }
+  logger.info('=== Turno iniciado ===', {
+    playerId: data.playerId,
+    turnNumber: data.turnNumber,
+    phase: data.phase,
+    playerState: data.playerState
+  });
   
   gameState.currentPhase = data.phase;
   gameState.isMyTurn = data.playerId === playerId;
@@ -136,34 +213,33 @@ function handleTurnStarted(data) {
   }
   
   if (gameState.isMyTurn) {
-    console.log('É seu turno!');
+    logger.info('É seu turno!');
     runNextTest();
   }
 }
 
 function handlePhaseChanged(data) {
-  console.log('=== Fase alterada ===');
-  console.log('Nova fase:', data.phase);
-  if (data.events) {
-    console.log('Eventos:', data.events);
-  }
+  logger.info('=== Fase alterada ===', {
+    phase: data.phase,
+    events: data.events
+  });
   
   gameState.currentPhase = data.phase;
   
   if (gameState.isMyTurn) {
-    console.log('Executando ação da fase', data.phase);
+    logger.info('Executando ação da fase', { phase: data.phase });
     runNextTest();
   }
 }
 
 function handleCardsDrawn(data) {
-  console.log('Cartas compradas:', data.cards);
+  logger.info('Cartas compradas', { cards: data.cards });
   gameState.hand = gameState.hand.concat(data.cards);
   runNextTest();
 }
 
 function handleVampireReadied(data) {
-  console.log('Vampiro preparado:', data.vampireName);
+  logger.info('Vampiro preparado', { vampireName: data.vampireName });
   const vampire = gameState.ready_region.find(v => v.id === data.vampireId);
   if (vampire) {
     vampire.ready = true;
@@ -173,30 +249,27 @@ function handleVampireReadied(data) {
 }
 
 function handleCombatInitiated(data) {
-  console.log('Combate iniciado:', data);
-  // Simular ações de combate
+  logger.info('Combate iniciado', data);
   simulateCombat(data.combat);
 }
 
 function handleCombatResolved(data) {
-  console.log('Combate resolvido:', data);
+  logger.info('Combate resolvido', data);
 }
 
 function handlePoliticalAction(data) {
-  console.log('Ação política:', data);
-  // Simular votação
+  logger.info('Ação política', data);
   simulateVoting(data.referendum);
 }
 
 function handleGameEnded(data) {
-  console.log('Jogo terminado:', data);
+  logger.info('Jogo terminado', data);
   if (data.winner === playerId) {
-    console.log('Você venceu!');
+    logger.success('Você venceu!');
   } else {
-    console.log('Você perdeu.');
+    logger.warn('Você perdeu.');
   }
   
-  // Desconectar após alguns segundos
   setTimeout(disconnect, 3000);
 }
 
@@ -287,11 +360,18 @@ function runNextTest() {
 }
 
 // Funções de ação
-function createGame() {
+async function createGame() {
+  const deck = await fetchCardsFromAPI();
+  if (!deck) {
+    console.error('Não foi possível criar o deck');
+    return;
+  }
+  
   sendToServer({
     type: 'createGame',
     title: `${playerData.name}'s Game`,
-    clanFocus: playerData.selectedClan
+    clanFocus: playerData.selectedClan,
+    deck: deck
   });
 }
 
@@ -421,11 +501,12 @@ function disconnect() {
 
 // Tratamento de erros
 client.on('error', (err) => {
-  console.error('Erro no cliente:', err);
+  logger.error('Erro no cliente', { error: err.message });
 });
 
 // Tratamento de sinais para encerramento limpo
 process.on('SIGINT', () => {
+  logger.info('Encerrando cliente...');
   disconnect();
   setTimeout(() => {
     process.exit(0);
