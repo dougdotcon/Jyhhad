@@ -257,8 +257,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
         <small>Desenvolvedor Principal</small>
       </td>
       <td align="center">
-        <a href="https://github.com/douglas">
-          <img src="https://github.com/douglas.png" width="100px;" alt="Douglas"/><br>
+        <a href="https://github.com/dougdotcon">
+          <img src="https://github.com/dougdotcon.png" width="100px;" alt="Douglas"/><br>
           <b>Douglas</b>
         </a><br>
         <small>Desenvolvedor Principal</small>
